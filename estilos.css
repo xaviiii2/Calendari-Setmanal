@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 22px;
+}
+
+/* Diseño de la tabla */
+table {
+    width: 100%;
+    border: 3px dotted #222222;
+    border-spacing: 4px;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Celdas y encabezados */
+th, td {
+    border: 1px solid #222222;
+    border-style: solid;
+    border-radius: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+th.horario {
+    width: 18%;
+}
+
+/* Colores de las actividades */
+td.estudio {
+    background-color: #d6eeee;
+    color: #111111;
+}
+
+td.clases {
+    background-color: #1454ed;
+    color: #000000;
+}
+
+td.descanso {
+    background-color: #1454ed;
+    color: #000000;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+/* Cambio de color al pasar el ratón por una fila */
+tr:hover td,
+tr:hover th {
+    background-color: #b8e6e6;
+}
+
+/* Mantener contraste en las celdas al pasar el ratón */
+tr:hover td.clases,
+tr:hover td.descanso {
+    background-color: #4b83f5;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        min-width: 760px;
+    }
+
+    body {
+        overflow-x: auto;
+    }
+}
